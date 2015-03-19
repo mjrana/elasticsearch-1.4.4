@@ -1,0 +1,41 @@
+[2015-03-19 00:04:35,008][INFO ][cluster.service          ] [Jebediah Guthrie] added {[logstash-mjrana.local-65636-2010][8SUkksqbTKykfVxTuPiDXA][mjrana.local][inet[/10.0.0.137:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-mjrana.local-65636-2010][8SUkksqbTKykfVxTuPiDXA][mjrana.local][inet[/10.0.0.137:9301]]{client=true, data=false}])
+[2015-03-19 00:04:36,140][INFO ][cluster.metadata         ] [Jebediah Guthrie] [logstash-2015.03.18] creating index, cause [auto(bulk api)], shards [5]/[1], mappings [_default_]
+[2015-03-19 00:04:36,255][INFO ][cluster.metadata         ] [Jebediah Guthrie] [logstash-2015.03.18] update_mapping [logs] (dynamic)
+[2015-03-19 08:41:39,364][WARN ][transport.netty          ] [Jebediah Guthrie] exception caught on transport layer [[id: 0x80704cc4, /10.0.0.137:61782 => /10.0.0.137:9301]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:318)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+[2015-03-19 08:41:39,445][INFO ][cluster.service          ] [Jebediah Guthrie] removed {[logstash-mjrana.local-65636-2010][8SUkksqbTKykfVxTuPiDXA][mjrana.local][inet[/10.0.0.137:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-mjrana.local-65636-2010][8SUkksqbTKykfVxTuPiDXA][mjrana.local][inet[/10.0.0.137:9301]]{client=true, data=false}), reason transport disconnected
+[2015-03-19 08:47:49,884][INFO ][node                     ] [Jebediah Guthrie] stopping ...
+[2015-03-19 08:47:50,002][INFO ][node                     ] [Jebediah Guthrie] stopped
+[2015-03-19 08:47:50,003][INFO ][node                     ] [Jebediah Guthrie] closing ...
+[2015-03-19 08:47:50,017][INFO ][node                     ] [Jebediah Guthrie] closed
+[2015-03-19 08:58:08,452][INFO ][node                     ] [Tom Foster] version[1.4.4], pid[66191], build[c88f77f/2015-02-19T13:05:36Z]
+[2015-03-19 08:58:08,452][INFO ][node                     ] [Tom Foster] initializing ...
+[2015-03-19 08:58:08,457][INFO ][plugins                  ] [Tom Foster] loaded [], sites []
+[2015-03-19 08:58:11,367][INFO ][node                     ] [Tom Foster] initialized
+[2015-03-19 08:58:11,367][INFO ][node                     ] [Tom Foster] starting ...
+[2015-03-19 08:58:11,449][INFO ][transport                ] [Tom Foster] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.168.96.146:9300]}
+[2015-03-19 08:58:11,470][INFO ][discovery                ] [Tom Foster] elasticsearch/clVeIlFkQUiET8Wb-voIGQ
+[2015-03-19 08:58:15,265][INFO ][cluster.service          ] [Tom Foster] new_master [Tom Foster][clVeIlFkQUiET8Wb-voIGQ][mjrana.local][inet[/10.168.96.146:9300]], reason: zen-disco-join (elected_as_master)
+[2015-03-19 08:58:15,286][INFO ][http                     ] [Tom Foster] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.168.96.146:9200]}
+[2015-03-19 08:58:15,287][INFO ][node                     ] [Tom Foster] started
+[2015-03-19 08:58:15,871][INFO ][gateway                  ] [Tom Foster] recovered [7] indices into cluster_state
+[2015-03-19 08:59:15,956][INFO ][cluster.service          ] [Tom Foster] added {[logstash-mjrana.local-66199-2010][fNZPjlDKR_SvLU1I9emKZA][mjrana.local][inet[/10.168.96.146:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-mjrana.local-66199-2010][fNZPjlDKR_SvLU1I9emKZA][mjrana.local][inet[/10.168.96.146:9301]]{client=true, data=false}])
+[2015-03-19 09:13:45,856][INFO ][cluster.service          ] [Tom Foster] added {[logstash-mjrana.local-66301-2010][JpgXd2d6QPmw_pn2pG0kPA][mjrana.local][inet[/10.168.96.146:9302]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[logstash-mjrana.local-66301-2010][JpgXd2d6QPmw_pn2pG0kPA][mjrana.local][inet[/10.168.96.146:9302]]{client=true, data=false}])
+[2015-03-19 09:13:51,045][INFO ][cluster.metadata         ] [Tom Foster] [logstash-2015.03.19] creating index, cause [auto(bulk api)], shards [5]/[1], mappings [_default_]
+[2015-03-19 09:13:51,178][INFO ][cluster.metadata         ] [Tom Foster] [logstash-2015.03.19] update_mapping [logs] (dynamic)
+[2015-03-19 11:24:45,302][INFO ][cluster.service          ] [Tom Foster] removed {[logstash-mjrana.local-66301-2010][JpgXd2d6QPmw_pn2pG0kPA][mjrana.local][inet[/10.168.96.146:9302]]{client=true, data=false},}, reason: zen-disco-node_failed([logstash-mjrana.local-66301-2010][JpgXd2d6QPmw_pn2pG0kPA][mjrana.local][inet[/10.168.96.146:9302]]{client=true, data=false}), reason transport disconnected
